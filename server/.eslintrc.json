@@ -1,0 +1,41 @@
+{
+  "parserOptions": {
+    "project": "./server/tsconfig.json"
+  },
+  "extends": [
+    "../.eslintrc.cjs",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:node/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "node/no-process-env": 1,
+    "node/no-extraneous-import": 1,
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "ignores": [
+          "modules"
+        ]
+      }
+    ],
+    "node/no-missing-import": 0,
+    "node/no-unpublished-import": 0,
+    "node/no-html-link-for-pages": 0
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
+      ]
+    }
+  }
+}
