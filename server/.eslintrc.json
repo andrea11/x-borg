@@ -28,6 +28,15 @@
     "node/no-unpublished-import": 0,
     "node/no-html-link-for-pages": 0
   },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts"],
+      "rules": {
+        "@typescript-eslint/no-unsafe-return": 1,
+        "@typescript-eslint/no-unsafe-assignment": 1
+      }
+    }
+  ],
   "settings": {
     "node": {
       "tryExtensions": [

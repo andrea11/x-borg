@@ -24,6 +24,15 @@ const config = {
     "indent": ["warn", 2],
     "quotes": ["warn", "double"],
   },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts"],
+      "rules": {
+        "@typescript-eslint/no-unsafe-return": 1,
+        "@typescript-eslint/no-unsafe-assignment": 1
+      }
+    }
+  ],
 };
 
 module.exports = config;

@@ -19,7 +19,7 @@ COPY ./contracts ./contracts
 
 COPY ./db ./db
 
-COPY env.mjs jest.config.js ./
+COPY env.mjs jest.config.ts ./
 
 COPY ./ui/.env ./ui/
 

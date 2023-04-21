@@ -17,10 +17,13 @@
             + [User details flow](#user-details-flow)
     + [Getting started](#getting-started)
         * [General](#general)
+            + [Testing](#testing)
         * [Docker](#docker)
         * [Local development](#local-development)
             + [Backend](#backend-1)
+                * [Testing](#testing-1)
             + [Frontend](#frontend-1)
+                * [Testing](#testing-2)
 - [Demo](#demo)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with
@@ -138,6 +141,14 @@ NEXT_PUBLIC_API_URL_ENTRYPOINT="http://localhost:3000/api" # -> for the serverle
 NEXT_PUBLIC_API_URL_ENTRYPOINT="http://localhost:8000/api" # -> for the express backend
 ```
 
+##### Testing
+
+You can run the tests using the following command:
+
+```bash
+npm run test
+```
+
 #### Docker
 
 You can use docker to run the project. 
@@ -161,12 +172,28 @@ Follow the instructions below to run the project locally.
 npm run build:server && npm run start:server
 ```
 
+###### Testing
+
+You can run the tests using the following command:
+
+```bash
+npm run test:server
+```
+
 ##### Frontend
 
 1. Run the frontend
 
 ```bash
 npm run build:ui && npm run start:ui
+```
+
+###### Testing
+
+You can run the tests using the following command:
+
+```bash
+npm run test:ui
 ```
 
 ## Demo
