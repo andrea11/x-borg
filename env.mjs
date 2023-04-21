@@ -8,7 +8,7 @@ const server = z.object({
   DATABASE_URL: z.string().url(),
   NODE_ENV: z.enum(["development", "test", "production"]),
   INFURA_URL: z.string().url(),
-  NODE_PORT: z.string().regex(/^[0-9]+$/).optional()
+  NODE_PORT: z.string().regex(/^[0-9]+$/)
 });
 
 /**
